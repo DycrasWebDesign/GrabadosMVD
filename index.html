@@ -9,15 +9,16 @@
     <script src="https://kit.fontawesome.com/8baa4a79b0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Grabados MVD</title>
+    <script src="archivo.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
             <div class="header__h1">
-                <h1>Grabados MVD</h1>
+            <a name="inicio"><h1>Grabados MVD</h1></a> 
             </div>
             <div class="header__p">
-                <p>Todo en grabados.</p>
+                <p>Todo en grabados.</p>s
             </div>
             <nav>
                 <input type="checkbox" id="open-menu">  
@@ -27,16 +28,16 @@
                 <div class="nav__menu">
                     <ul class="nav__menu--item">
                         <li>
-                            <a href="#" rel="noopenner noreferrer nofollow" target="_blank">Inicio</a>
+                            <a href="#" rel="noopenner noreferrer nofollow" >Inicio</a>
                         </li>
                         <li>
-                            <a href="#" rel="noopenner noreferrer nofollow" target="_blank>Fotograbados">Fotograbados</a>
+                            <a href="#fotograbados" rel="noopenner noreferrer nofollow" >Fotograbados</a>
                         </li>
                         <li>
-                            <a href="#" rel="noopenner noreferrer nofollow" target="_blank>Fotograbados">Pantógrafo</a>
+                            <a href="#pantografo" rel="noopenner noreferrer nofollow" >Pantógrafo</a>
                         </li>
                         <li>
-                            <a href="mailto:prueba@gmai.com" rel="noopenner noreferrer nofollow" target="_blank>Fotograbados">Contacto</a>
+                            <a href="#contacto" rel="noopenner noreferrer nofollow" >Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -52,24 +53,26 @@
                     possimus nihil iste. Et, fugit
                     possimus nihil iste. Et, fugit  possimus nihil iste. Et, fugit
                     possimus nihil iste. Et, fugit
-                </p>
+                </p>     
             </div>
             <div class="quienessomos__img--container">
                 <img class="quienessomos__img" src="img/quinessomos.jpg" alt="">
-                
             </div>
+            <a href="#inicio">
+                <i class="fa-solid fa-arrow-turn-up"></i>
+            </a>
         </div>
         <main>
             <div class="main__container">
                 <div class="main__container--txt">
                     <div class="main__container--txt--h2">
-                        <h2>Fotograbados</h2>
+                        <a name="fotograbados"><h2>Fotograbados</h2></a>
                     </div>
                     <div class="main__container--txt--p">
                         <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nemo
                             voluptatum omnis laborum vero consectetur recusandae fuga voluptatem hic mollitia accusantium eum,
                             vel eveniet assumenda beatae, error eius nihil itaque.
-                            </p>
+                        </p>
                     </div>
                 </div>
                 <div class="main__container--img">
@@ -112,12 +115,26 @@
                     <div class="main__item--img">
                         <img src="img/img13.jpg" alt="">
                     </div>
-                   
                 </div>
+                <a class="main__subir" href="#inicio">
+                    <i class="fa-solid fa-arrow-turn-up"></i>
+                </a>
             </div>
         </main>
         <aside>
                 <div class="aside__container--card">
+                    <div class="aside__container--card--txt">
+                      <a name="pantografo"><h2>Diseñamos tu logo.</h2></a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Quasi qui amet unde ipsam earum itaque laudantium dolor ipsum, laborum architecto sit perferendis asperiores, voluptates 
+                            sequi corrupti magni quibusdam doloremque cum.4
+                        </p>
+                    </div>
+                    <div class="aside__container--card--img">
+                            <img src="img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="aside__container--card2">
                     <div class="aside__container--card--txt">
                         <h2>Diseñamos tu logo.</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing 
@@ -129,11 +146,38 @@
                             <img src="img/logo.png" alt="">
                     </div>
                 </div>
+                <a class="aside__subir"  href="#inicio">
+                    <i class="fa-solid fa-arrow-turn-up"></i>
+                </a>
+
         </aside>
         <footer>
-                <h3>hola</h3>
+            <div class="footer__icons">
+                <a href="http://facebook.com" target="_blank" class="facebook" >
+                    <i class="iconofacebook fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="http://instagram.com" target="_blank" class="instagram">
+                    <i class="iconoinstagram fa-brands fa-instagram"></i>
+                </a>  
+                <a href="httl://whatsapp.com" target="_blanks" class="whatsapp"> 
+                    <i class="iconowhatsapp fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="mailto:prueba@gmail.com">
+                    <i class="fa-solid fa-square-envelope"></i>
+                </a>
+            </div>
+            <div class="footer__txt">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, 
+                    consequatur. Impedit error sunt dolores 
+                </p>  
+            </div>
+            <div class="footer__copyright">
+                <i class="fa-solid fa-copyright"></i>
+              <a name="contacto">  <h3>Dycras Web Design</h3></a>
+            </div>          
         </footer>
     </div>
+    
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
     VanillaTilt.init(document.querySelector(".aside__container--card"), {
@@ -142,6 +186,12 @@
         glare:true,
         "max-glare":0.2,
 
+	});
+    VanillaTilt.init(document.querySelector(".aside__container--card2"), {
+		max: 15,
+		speed: 300,
+        glare:true,
+        "max-glare":0.2,
 	});
     </script>
 </body>
