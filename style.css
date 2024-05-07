@@ -159,22 +159,21 @@ nav{
 
 .logo{
     color: var(--nav1--color);
-   
     font-size: 30px;
     padding-right: 10px;
 }
 
 .nav__menu{
     /*background-color:#f65644;*/
-    background-color:   rgb(204, 122, 71);
+    background-color:   rgb(248, 241, 237);
     position:absolute;
     top: 38px;
     width: 100%;
     font-size: 1.5rem;
     text-align: center;
-    display: none;
     border-radius: 0 0 10px 10px ;
     box-shadow: inset 0 0 5px 0 var(--body-color);
+    display: none;
     
     
 }
@@ -477,7 +476,7 @@ main{
 .main__item--img img{
     border-radius: 5px;
     object-fit: cover;
-    width: 100%;
+    width: 0;
     transition: 0.5s ease;
 }
 
